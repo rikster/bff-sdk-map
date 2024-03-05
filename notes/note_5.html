@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+<title>
+Note - returns SdkEndpointConfig
+</title>
+<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+</head>
+<body>
+<h2>
+returns SdkEndpointConfig
+</h2>
+<hr/>
+<p>
+export type SdkEndpointConfig&lt;
+<br/>
+  Name extends string = string,
+<br/>
+  Response extends Data = Data,
+<br/>
+  Payload extends Data | never = never
+<br/>
+&gt; = {
+<br/>
+  name: Name
+<br/>
+  response: Response
+<br/>
+  data: Payload
+<br/>
+}
+</p>
+</body>
+</html>

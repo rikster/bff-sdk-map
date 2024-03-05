@@ -1,0 +1,33 @@
+﻿<html>
+<head>
+<title>
+Note - addToCartEndpoint()
+</title>
+<link rel="shortcut icon" type="image/png" href="../favicon.png"/>
+</head>
+<body>
+<h2>
+addToCartEndpoint()
+</h2>
+<hr/>
+<p>
+export const addToCartEndpoint = new SdkEndpoint&lt;AddToCartEndpoint&gt;({
+<br/>
+  name: &apos;addToCart&apos;,
+<br/>
+  async onCall(data, { post }) {
+<br/>
+    return post&lt;Cart, AddToCartEndpoint[&apos;data&apos;]&gt;(
+<br/>
+      &apos;/checkout-app/cart/add-item&apos;,
+<br/>
+      data
+<br/>
+    )
+<br/>
+  },
+<br/>
+})
+</p>
+</body>
+</html>
